@@ -4,8 +4,7 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-
-        # #does not make use of sorted array
+        # Initial solution using heap, does not make use of sorted array
         # size = m+n
         # for i in range(m, size):
         #     nums1[i] = nums2[i-m]
