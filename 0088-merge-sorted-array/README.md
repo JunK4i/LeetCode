@@ -12,11 +12,11 @@ If 1st array is not expended and 1st array element greater than 2nd, add to end 
 Else if 1st array expended or 2nd element greater, add to end of list
 </p>
 <br/>
-	<p>		
-In the case where both is equal, remove from 2nd array first, then subsequent iteration, 1st condition will trigger (since 1st array sitll has element) 
-In the case where there are no elements in 1st array, will copy 2nd array. 
+<p>		
+In the case where both is equal, remove from 2nd array first, then subsequent iteration, 1st condition will trigger (since 1st array sitll has element) <br/>
+In the case where there are no elements in 1st array, will copy 2nd array. <br/>
 In the case where there are no elements in 2nd array, loop will end immediately
-	</p>
+</p>
 </h3>
 
 <hr><p>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in <strong>non-decreasing order</strong>, and two integers <code>m</code> and <code>n</code>, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</p>
