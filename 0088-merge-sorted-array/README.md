@@ -1,4 +1,20 @@
-<h2><a href="https://leetcode.com/problems/merge-sorted-array">88. Merge Sorted Array</a></h2><h3>Easy</h3><hr><p>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in <strong>non-decreasing order</strong>, and two integers <code>m</code> and <code>n</code>, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</p>
+<h2><a href="https://leetcode.com/problems/merge-sorted-array">88. Merge Sorted Array</a></h2><h3>Easy</h3>
+
+<h3>
+Solution Notes:
+For arrays already sorted, best solution is to use loops and 3 pointers. <br/>
+End while loop when 2nd array is expended. <br/>
+If 1st array is not expended and 1st array element greater than 2nd, add to end of list<br/>
+Else if 1st array expended or 2nd element greater, add to end of list<br/>
+	
+In the case where both is equal, remove from 2nd array first, then subsequent iteration, 1st condition will trigger (since 1st array sitll has element) <br/>
+
+In the case where there are no elements in 1st array, will copy 2nd array. <br/>
+
+In the case where there are no elements in 2nd array, loop will end immediately
+</h3>
+
+<hr><p>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in <strong>non-decreasing order</strong>, and two integers <code>m</code> and <code>n</code>, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</p>
 
 <p><strong>Merge</strong> <code>nums1</code> and <code>nums2</code> into a single array sorted in <strong>non-decreasing order</strong>.</p>
 
