@@ -9,9 +9,12 @@ class Solution:
         #     nums.remove(num)
         #     nums.append(num)
         # k = n-len(match)
-        index = 0
-        for i in range(len(nums)):
-            if nums[i] != val:
-                nums[index] = nums[i]
-                index +=1   
-        return index
+        
+        n = len(nums)
+        m = 0
+        for i in range(n):
+            if nums[i] == val:
+                nums[i] = 51
+                m+=1
+        nums.sort()
+        return n-m
