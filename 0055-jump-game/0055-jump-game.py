@@ -36,22 +36,10 @@ class Solution:
         #             return True
 
         if len(nums) == 1: return True
-        pos,jump = 0,0
-
-        for pos in range(10000000):
-            # if current jump less than jump position, skip
-            if jump > pos + nums[pos]:
-                pass
-            # update max jump distance
-            else:
-                jump = pos + nums[pos]
-                pos += 1
-            # if iteration has reached the pt where, it is farther than max jump recorded, return False
-            if pos > jump:
-                break
-            # if jump more than length
-            if jump >= len(nums)-1:
-                return True
-        return False
+        reachable = 0
+        for i in range(len(nums)):
+            if i > reachable: return False
+            reachable = max(reachable, i+nums[i])
+        return True
 
         
