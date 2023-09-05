@@ -1,7 +1,7 @@
 class Solution:
     def jump(self, nums: List[int]) -> int:
         # at each step find the farthest u can jump and the number of steps. 
-        # if you can jump further with less steps, update indexes that can increase furthest jump
+        # update indexes that can increase furthest jump
         # When you have reached the end, start from the beginning and find the largest index that can increase
         # max jumps
 
@@ -27,8 +27,7 @@ class Solution:
             if reachable < nums[i]+ i:
                 reachable = nums[i]+i
                 jumps[i] = reachable
-            else:
-                continue
+            
         
 
             
